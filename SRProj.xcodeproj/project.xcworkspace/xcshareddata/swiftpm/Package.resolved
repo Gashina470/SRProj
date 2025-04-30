@@ -1,0 +1,60 @@
+{
+  "originHash" : "093b5aa33e6922d2944e7e93ee8a37eea404fd352e663423da372de10a5897fa",
+  "pins" : [
+    {
+      "identity" : "appsflyerframework-static",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static",
+      "state" : {
+        "revision" : "a428583e55e17a37e5b75b9558251ac62febc791",
+        "version" : "6.16.2"
+      }
+    },
+    {
+      "identity" : "purchases-ios-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RevenueCat/purchases-ios-spm",
+      "state" : {
+        "revision" : "6e23b9f35228839a2264da96f454965568e2ad35",
+        "version" : "5.20.1"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "cccb3ca9e26ec452a29f2f0d4050d1e38b8a3d43",
+        "version" : "14.14.0"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "8cb364a6a63695df296f05b53f7c3f3b1dda6af3"
+      }
+    },
+    {
+      "identity" : "xcdyoutubekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0xced/XCDYouTubeKit.git",
+      "state" : {
+        "revision" : "23f765941b36d6d28215ab81a37af1039d29138b",
+        "version" : "2.15.2"
+      }
+    },
+    {
+      "identity" : "youtubekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alexeichhorn/YouTubeKit",
+      "state" : {
+        "revision" : "e7dbaa332ff190e85241bb90e9a26f3ce4993458",
+        "version" : "0.2.6"
+      }
+    }
+  ],
+  "version" : 3
+}
