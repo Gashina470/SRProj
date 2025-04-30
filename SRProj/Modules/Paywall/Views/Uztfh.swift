@@ -66,6 +66,6 @@ var hfsjl:  Character {
                 }
             }
             .scrollDisabled(true)
-            .ignoresSafeArea()
+            .edgesIgnoringSafeArea(.bottom)
     }
 }
