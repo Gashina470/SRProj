@@ -52,6 +52,7 @@ var jhhcrlyvdqf:  UInt {
                 .environmentObject(odommukuvc)
                 .environmentObject(dav)
                 .environmentObject(Pputo.shared)
+                .environmentObject(delegate.appState)
         }
     }
 }

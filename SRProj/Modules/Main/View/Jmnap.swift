@@ -34,6 +34,7 @@ var whgfqms:  Set<String> {
     }
     }
     @EnvironmentObject var odommukuvc: Erywktqs
+    @EnvironmentObject var appState: AppState
     @EnvironmentObject var xtrgdy: Pputo
     @StateObject private var bblb = Kuehwxft.shared
     @ObservedObject var dav: Evwdf
@@ -56,7 +57,9 @@ var whgfqms:  Set<String> {
                             if !odommukuvc.qgkr {
                                 nxlzbegq
                             }
-                            fnfpmcw
+                            if !appState.disabledServices {
+                                fnfpmcw
+                            }
                             lkieghs
                         }
                         .padding(.horizontal, 16)

@@ -38,6 +38,10 @@
 		2B3AEFD52D919EEA00BCE1ED /* Yrspivtcu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AEFD42D919EEA00BCE1ED /* Yrspivtcu.swift */; };
 		2B3AEFDE2D91B57600BCE1ED /* Jpblahg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AEFDD2D91B57600BCE1ED /* Jpblahg.swift */; };
 		2B4C31BE2DC2869900B8626E /* Config.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 2B4C31BD2DC2869900B8626E /* Config.storekit */; };
+		2B4C31D52DC54CEA00B8626E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B4C31D42DC54CEA00B8626E /* GoogleService-Info.plist */; };
+		2B4C31D82DC54DAC00B8626E /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2B4C31D72DC54DAC00B8626E /* FirebaseCore */; };
+		2B4C31DA2DC54DAC00B8626E /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 2B4C31D92DC54DAC00B8626E /* FirebaseRemoteConfig */; };
+		2B4C31E32DC5501900B8626E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4C31E22DC5501900B8626E /* AppState.swift */; };
 		2B5132AB2DA436490017D6ED /* Nwpb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5132AA2DA436490017D6ED /* Nwpb.swift */; };
 		2B5132AD2DA44A850017D6ED /* Elkxtgnybafffn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5132AC2DA44A850017D6ED /* Elkxtgnybafffn.swift */; };
 		2B5133A62DA457540017D6ED /* Cupqw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5133A52DA457540017D6ED /* Cupqw.swift */; };
@@ -132,6 +136,8 @@
 		2B3AEFD42D919EEA00BCE1ED /* Yrspivtcu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yrspivtcu.swift; sourceTree = "<group>"; };
 		2B3AEFDD2D91B57600BCE1ED /* Jpblahg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jpblahg.swift; sourceTree = "<group>"; };
 		2B4C31BD2DC2869900B8626E /* Config.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Config.storekit; sourceTree = "<group>"; };
+		2B4C31D42DC54CEA00B8626E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2B4C31E22DC5501900B8626E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2B5132AA2DA436490017D6ED /* Nwpb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nwpb.swift; sourceTree = "<group>"; };
 		2B5132AC2DA44A850017D6ED /* Elkxtgnybafffn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elkxtgnybafffn.swift; sourceTree = "<group>"; };
 		2B5133A52DA457540017D6ED /* Cupqw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cupqw.swift; sourceTree = "<group>"; };
@@ -182,12 +188,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4C31DA2DC54DAC00B8626E /* FirebaseRemoteConfig in Frameworks */,
 				2BB8CDB22D9BE938002F747A /* YouTubeKit in Frameworks */,
 				2BB7D18B2D91E40B00B5F17B /* RealmSwift in Frameworks */,
 				2BA65E3A2D9076F7008D2978 /* RevenueCat in Frameworks */,
 				2B3AEF882D90789A00BCE1ED /* AppsFlyerLib-Static in Frameworks */,
 				2BA65E372D90764A008D2978 /* StoreKit.framework in Frameworks */,
 				2BA65E3C2D9076F9008D2978 /* RevenueCatUI in Frameworks */,
+				2B4C31D82DC54DAC00B8626E /* FirebaseCore in Frameworks */,
 				2B842E6E2D9AA29D0038DB79 /* XCDYouTubeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +406,7 @@
 		2B8A2FF02D8C83FD003BF877 /* SRProj */ = {
 			isa = PBXGroup;
 			children = (
+				2B4C31D42DC54CEA00B8626E /* GoogleService-Info.plist */,
 				2B842E6B2D9A9BEF0038DB79 /* Info.plist */,
 				2B842E662D9A91B90038DB79 /* Managers */,
 				2BB7D18C2D91E42900B5F17B /* Realm */,
@@ -428,6 +437,7 @@
 			children = (
 				2B8A2FF12D8C83FD003BF877 /* Oxxphbetjeds.swift */,
 				2B3AEF932D9085AD00BCE1ED /* Yfuucgew.swift */,
+				2B4C31E22DC5501900B8626E /* AppState.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -658,6 +668,8 @@
 				2BB7D18A2D91E40B00B5F17B /* RealmSwift */,
 				2B842E6D2D9AA29D0038DB79 /* XCDYouTubeKit */,
 				2BB8CDB12D9BE938002F747A /* YouTubeKit */,
+				2B4C31D72DC54DAC00B8626E /* FirebaseCore */,
+				2B4C31D92DC54DAC00B8626E /* FirebaseRemoteConfig */,
 			);
 			productName = OfflineMusicPlayer;
 			productReference = 2B8A2FEE2D8C83FD003BF877 /* SRProj.app */;
@@ -693,6 +705,7 @@
 				2BB7D1872D91E40B00B5F17B /* XCRemoteSwiftPackageReference "realm-swift" */,
 				2B842E6C2D9AA29D0038DB79 /* XCRemoteSwiftPackageReference "XCDYouTubeKit" */,
 				2BB8CDB02D9BE938002F747A /* XCRemoteSwiftPackageReference "YouTubeKit" */,
+				2B4C31D62DC54D8900B8626E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 2B8A2FEF2D8C83FD003BF877 /* Products */;
 			projectDirPath = "";
@@ -711,6 +724,7 @@
 				2B4C31BE2DC2869900B8626E /* Config.storekit in Resources */,
 				2B8A2FF92D8C83FE003BF877 /* Preview Assets.xcassets in Resources */,
 				2B8A2FF62D8C83FE003BF877 /* Assets.xcassets in Resources */,
+				2B4C31D52DC54CEA00B8626E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +758,7 @@
 				2BA65E2D2D9070BA008D2978 /* Adpsnj.swift in Sources */,
 				2B9873C22D9433E300D4F0FA /* Mgbxeelapdaq.swift in Sources */,
 				2B9076B82D9C69DA00908045 /* Mskg.swift in Sources */,
+				2B4C31E32DC5501900B8626E /* AppState.swift in Sources */,
 				2B842E682D9A91C80038DB79 /* Wqeibpeifcgl.swift in Sources */,
 				2B3AEFAD2D91403B00BCE1ED /* Jaqq.swift in Sources */,
 				2B3AEFD32D918F9C00BCE1ED /* Lwrnx.swift in Sources */,
@@ -922,7 +937,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"SRProj/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -963,7 +978,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"SRProj/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -1029,6 +1044,14 @@
 				minimumVersion = 6.16.2;
 			};
 		};
+		2B4C31D62DC54D8900B8626E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
 		2B842E6C2D9AA29D0038DB79 /* XCRemoteSwiftPackageReference "XCDYouTubeKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/0xced/XCDYouTubeKit.git";
@@ -1068,6 +1091,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2B3AEF862D90789A00BCE1ED /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
 			productName = "AppsFlyerLib-Static";
+		};
+		2B4C31D72DC54DAC00B8626E /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B4C31D62DC54D8900B8626E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		2B4C31D92DC54DAC00B8626E /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B4C31D62DC54D8900B8626E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
 		};
 		2B842E6D2D9AA29D0038DB79 /* XCDYouTubeKit */ = {
 			isa = XCSwiftPackageProductDependency;

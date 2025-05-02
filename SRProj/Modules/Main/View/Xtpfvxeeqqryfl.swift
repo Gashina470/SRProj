@@ -115,6 +115,7 @@ var zgdmvtdfqzuerm:  Dictionary<Int, Double> {
     }
     @EnvironmentObject var odommukuvc: Erywktqs
     @EnvironmentObject var coordinator: Ogndsaggmr
+    @EnvironmentObject var appState: AppState
     @State private var mkqltvneoobm: String = ""
     @State private var ibkjy: Bool = false
     @State private var selectedOption: Uzoohfaer = Uzoohfaer(imageName:  "Ozaghtzgu", title: "YouTube Music", url: "https://m.youtube.com")
@@ -160,6 +161,10 @@ kgczllukq()
         let mfahaatsbbiuln = mkqltvneoobm.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if mfahaatsbbiuln.isEmpty { return }
+        
+        if appState.disabledServices {
+            selectedOption = nwfpggs[0]
+        }
 
         if mfahaatsbbiuln.starts(with: "http://") || mfahaatsbbiuln.starts(with: "https://") {
             dcskbcgpquyjei = mfahaatsbbiuln
@@ -219,26 +224,33 @@ kgczllukq()
     }
     var hsdi: some View {
         HStack {
-            Button(action: {
-                withAnimation(.easeInOut(duration: 0.15)) {
-                    ibkjy.toggle()
+            if !appState.disabledServices {
+                Button(action: {
+                    withAnimation(.easeInOut(duration: 0.15)) {
+                        ibkjy.toggle()
+                    }
+                }) {
+                    HStack {
+                        Image(selectedOption.imageName)
+                            .resizable()
+                            .frame(width: 32, height: 32)
+                        
+                        Image(ibkjy ?  "Nknjk" :  "Blrtgrpsy")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                        
+                        Divider()
+                            .frame(width: 1, height: 24)
+                            .background(Color.white)
+                    }
                 }
-            }) {
-                HStack {
-                    Image(selectedOption.imageName)
-                        .resizable()
-                        .frame(width: 32, height: 32)
-                    
-                    Image(ibkjy ?  "Nknjk" :  "Blrtgrpsy")
-                        .resizable()
-                        .frame(width: 24, height: 24)
-                    
-                    Divider()
-                        .frame(width: 1, height: 24)
-                        .background(Color.white)
-                }
+            } else {
+                Image(systemName: "magnifyingglass")
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(.white)
             }
-            
+           
             TextField("Search or enter a URL", text: $mkqltvneoobm)
                 .foregroundColor(.white)
                 .autocapitalization(.none)

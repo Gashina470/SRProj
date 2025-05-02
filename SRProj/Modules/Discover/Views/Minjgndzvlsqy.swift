@@ -133,6 +133,7 @@ var ecee:  String {
                             Text(item.title)
                                 .font(.system(size: 16, weight: .regular))
                                 .foregroundColor(.white)
+                                .lineLimit(1)
                         }
                     }
                 }
