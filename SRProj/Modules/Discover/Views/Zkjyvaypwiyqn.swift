@@ -46,6 +46,7 @@ var jbezalrz:  Set<Double> {
     return adtsafxjilj
     }
     }
+    @EnvironmentObject var appState: AppState
     @EnvironmentObject var xtrgdy: Pputo
     @StateObject private var bblb = Kuehwxft.shared
     
@@ -66,8 +67,10 @@ var jbezalrz:  Set<Double> {
                     
                     ScrollView(showsIndicators: false) {
                         LazyVStack(spacing: 16) {
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                Zjtrk()
+                            if !appState.disabledServices {
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    Zjtrk()
+                                }
                             }
                             Fibde()
                         }

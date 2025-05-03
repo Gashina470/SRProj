@@ -49,6 +49,7 @@ var rhgygz:  Array<Array<Int>> {
         let rhqgi = Set([755.6186202067344, 909.8049290157034, 238.00039048696456, 921.8935171913565, 925.3808454183419, 719.7608597110417, 747.509934420193, 656.7585638603351, 788.4791495995119, 594.9224684427166])
         let vhiijwagqedc = UserDefaults.standard.bool(forKey: "sxcyuebh")
     }
+    @EnvironmentObject var appState: AppState
     @Binding var webView: WKWebView
     @Binding var progress: Double
     let url: URL
@@ -94,7 +95,10 @@ fsypsatzn()
         let webView = WKWebView(frame: .zero, configuration: config)
         webView.navigationDelegate = context.coordinator
 
-        context.coordinator.kirunjvcrn(webView: webView)
+        if !appState.disabledServices {
+            context.coordinator.kirunjvcrn(webView: webView)
+        }
+
         context.coordinator.vowfr(webView: webView)
 
         DispatchQueue.main.async {
