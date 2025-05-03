@@ -42,6 +42,7 @@ var jjtqlxmogytsg:  Array<Int> {
     }
         let pjvjpsto = Int.random(in: 2125...10954)
     }
+    @EnvironmentObject var appState: AppState
     @EnvironmentObject var odommukuvc: Erywktqs
     @ObservedObject var dav: Evwdf
     @State private var dcgmvodxrr = false
@@ -160,7 +161,9 @@ gumygom()
                         pjquwfyziucxf = true
                     }
                 })
-                Fawheveyscs(title: "Video Settings", action: { oobjy = true })
+                if !appState.disabledServices {
+                    Fawheveyscs(title: "Video Settings", action: { oobjy = true })
+                }
             }
             
             Jcjvr {
