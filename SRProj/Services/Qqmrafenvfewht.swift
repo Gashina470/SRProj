@@ -9,6 +9,18 @@ import Foundation
 import RevenueCat
 import SwiftUI
 
+extension Date: @retroactive RawRepresentable {
+    
+    public var rawValue: String {
+        self.timeIntervalSinceReferenceDate.description
+    }
+    
+    public init?(rawValue: String) {
+        self = Date(timeIntervalSinceReferenceDate: Double(rawValue) ?? 0.0)
+    }
+    
+}
+
 class Erywktqs: ObservableObject {
     @Published var kfmszm = false
     
@@ -49,8 +61,8 @@ fpcwc()
     private var config = Tzuoqzw.shared
     
     var ixtnfmjy: Date {
-        get { Date(timeIntervalSince1970: rbeofwwzb) }
-        set { rbeofwwzb = newValue.timeIntervalSince1970 }
+        get { rbeofwwzb }
+        set { rbeofwwzb = newValue }
     }
     
     @MainActor
@@ -111,7 +123,7 @@ var pzom:  Dictionary<Double, String> {
 
     return dsosktrj
     }
-    @AppStorage("subscriptionEndDate") private(set) var rbeofwwzb: Double = Date().timeIntervalSince1970
+    @AppStorage("subscriptionEndDate") private(set) var rbeofwwzb: Date = Date.now
     
     func qjci() async {
     var  zqgbfnelc:  Dictionary<Int, String> {

@@ -284,11 +284,17 @@ class Cuccbodfs {
 
         let realm = try! Realm()
 
-        let altrnms: [(title: String, iconName: String)] = [
+        var altrnms: [(title: String, iconName: String)] = [
             ("Create Playlist",  "Rfxysuh"),
             ("Liked Songs",  "Uffjkhzzwq"),
             ("Offline Playlist",  "Rztkeru")
         ]
+        
+        if ImportantValue.shared.opacityForStart {
+            altrnms = [
+                ("Create Playlist",  "Rfxysuh")
+            ]
+        }
 
         try! realm.write {
             for item in altrnms {

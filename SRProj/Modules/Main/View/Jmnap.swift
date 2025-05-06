@@ -34,7 +34,7 @@ var whgfqms:  Set<String> {
     }
     }
     @EnvironmentObject var odommukuvc: Erywktqs
-    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var importantValue: ImportantValue
     @EnvironmentObject var xtrgdy: Pputo
     @StateObject private var bblb = Kuehwxft.shared
     @ObservedObject var dav: Evwdf
@@ -57,7 +57,7 @@ var whgfqms:  Set<String> {
                             if !odommukuvc.qgkr {
                                 nxlzbegq
                             }
-                            if !appState.disabledServices {
+                            if !importantValue.opacityForStart {
                                 fnfpmcw
                             }
                             lkieghs

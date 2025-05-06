@@ -37,11 +37,10 @@
 		2B3AEFD32D918F9C00BCE1ED /* Lwrnx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AEFD22D918F9C00BCE1ED /* Lwrnx.swift */; };
 		2B3AEFD52D919EEA00BCE1ED /* Yrspivtcu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AEFD42D919EEA00BCE1ED /* Yrspivtcu.swift */; };
 		2B3AEFDE2D91B57600BCE1ED /* Jpblahg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AEFDD2D91B57600BCE1ED /* Jpblahg.swift */; };
-		2B4C31BE2DC2869900B8626E /* Config.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 2B4C31BD2DC2869900B8626E /* Config.storekit */; };
 		2B4C31D52DC54CEA00B8626E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B4C31D42DC54CEA00B8626E /* GoogleService-Info.plist */; };
 		2B4C31D82DC54DAC00B8626E /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2B4C31D72DC54DAC00B8626E /* FirebaseCore */; };
 		2B4C31DA2DC54DAC00B8626E /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 2B4C31D92DC54DAC00B8626E /* FirebaseRemoteConfig */; };
-		2B4C31E32DC5501900B8626E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4C31E22DC5501900B8626E /* AppState.swift */; };
+		2B4C31E32DC5501900B8626E /* ImportantValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4C31E22DC5501900B8626E /* ImportantValue.swift */; };
 		2B5132AB2DA436490017D6ED /* Nwpb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5132AA2DA436490017D6ED /* Nwpb.swift */; };
 		2B5132AD2DA44A850017D6ED /* Elkxtgnybafffn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5132AC2DA44A850017D6ED /* Elkxtgnybafffn.swift */; };
 		2B5133A62DA457540017D6ED /* Cupqw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5133A52DA457540017D6ED /* Cupqw.swift */; };
@@ -135,9 +134,8 @@
 		2B3AEFD22D918F9C00BCE1ED /* Lwrnx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lwrnx.swift; sourceTree = "<group>"; };
 		2B3AEFD42D919EEA00BCE1ED /* Yrspivtcu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yrspivtcu.swift; sourceTree = "<group>"; };
 		2B3AEFDD2D91B57600BCE1ED /* Jpblahg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jpblahg.swift; sourceTree = "<group>"; };
-		2B4C31BD2DC2869900B8626E /* Config.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Config.storekit; sourceTree = "<group>"; };
 		2B4C31D42DC54CEA00B8626E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		2B4C31E22DC5501900B8626E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2B4C31E22DC5501900B8626E /* ImportantValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantValue.swift; sourceTree = "<group>"; };
 		2B5132AA2DA436490017D6ED /* Nwpb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nwpb.swift; sourceTree = "<group>"; };
 		2B5132AC2DA44A850017D6ED /* Elkxtgnybafffn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elkxtgnybafffn.swift; sourceTree = "<group>"; };
 		2B5133A52DA457540017D6ED /* Cupqw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cupqw.swift; sourceTree = "<group>"; };
@@ -419,7 +417,6 @@
 				2B8A30002D8C841A003BF877 /* Coordinators */,
 				2B8A2FF52D8C83FE003BF877 /* Assets.xcassets */,
 				2B8A2FF72D8C83FE003BF877 /* Preview Content */,
-				2B4C31BD2DC2869900B8626E /* Config.storekit */,
 			);
 			path = SRProj;
 			sourceTree = "<group>";
@@ -437,7 +434,7 @@
 			children = (
 				2B8A2FF12D8C83FD003BF877 /* Oxxphbetjeds.swift */,
 				2B3AEF932D9085AD00BCE1ED /* Yfuucgew.swift */,
-				2B4C31E22DC5501900B8626E /* AppState.swift */,
+				2B4C31E22DC5501900B8626E /* ImportantValue.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -721,7 +718,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4C31BE2DC2869900B8626E /* Config.storekit in Resources */,
 				2B8A2FF92D8C83FE003BF877 /* Preview Assets.xcassets in Resources */,
 				2B8A2FF62D8C83FE003BF877 /* Assets.xcassets in Resources */,
 				2B4C31D52DC54CEA00B8626E /* GoogleService-Info.plist in Resources */,
@@ -758,7 +754,7 @@
 				2BA65E2D2D9070BA008D2978 /* Adpsnj.swift in Sources */,
 				2B9873C22D9433E300D4F0FA /* Mgbxeelapdaq.swift in Sources */,
 				2B9076B82D9C69DA00908045 /* Mskg.swift in Sources */,
-				2B4C31E32DC5501900B8626E /* AppState.swift in Sources */,
+				2B4C31E32DC5501900B8626E /* ImportantValue.swift in Sources */,
 				2B842E682D9A91C80038DB79 /* Wqeibpeifcgl.swift in Sources */,
 				2B3AEFAD2D91403B00BCE1ED /* Jaqq.swift in Sources */,
 				2B3AEFD32D918F9C00BCE1ED /* Lwrnx.swift in Sources */,
@@ -937,7 +933,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"SRProj/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -952,6 +948,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -978,7 +975,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"SRProj/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -993,6 +990,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

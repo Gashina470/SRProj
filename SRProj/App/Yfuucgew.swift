@@ -60,8 +60,8 @@ vkg()
 vkg()
         
         FirebaseApp.configure()
-        setupRemoteConfigDefaults()
-        fetchRemoteConfig()
+        sRCD()
+        fRC()
 
         nwrj()
         Cuccbodfs.pufifuchbd()
@@ -112,9 +112,9 @@ vkg()
         AppsFlyerLib.shared().start()
     }
     
-    private func setupRemoteConfigDefaults() {
+    private func sRCD() {
         let defaults: [String: NSObject] = [
-            "disabledServices": false as NSObject
+            "opacity": false as NSObject
         ]
         RemoteConfig.remoteConfig().setDefaults(defaults)
         
@@ -123,26 +123,25 @@ vkg()
         RemoteConfig.remoteConfig().configSettings = settings
     }
 
-    private func fetchRemoteConfig() {
-        let remoteConfig = RemoteConfig.remoteConfig()
+    private func fRC() {
+        let rC = RemoteConfig.remoteConfig()
         
-        remoteConfig.fetchAndActivate { status, error in
+        rC.fetchAndActivate { status, error in
             if let error = error {
-                print("❌ Remote Config fetch error: \(error.localizedDescription)")
+
                 return
             }
+
             
-            print("✅ Remote Config fetch status: \(status.rawValue)")
-            
-            let isDisabled = remoteConfig.configValue(forKey: "disabledServices").boolValue
+            let isDisabled = rC.configValue(forKey: "opacity").boolValue
             
             DispatchQueue.main.async { [weak self] in
-                self?.appState.disabledServices = isDisabled
-                print("✅ Remote Config: disabledServices = \(isDisabled)")
+                self?.importantValue.opacityForStart = isDisabled
+
             }
         }
     }
     
     private let sce = Pputo.shared
-    let appState = AppState()
+    let importantValue = ImportantValue.shared
 }

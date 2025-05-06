@@ -46,7 +46,7 @@ var jbezalrz:  Set<Double> {
     return adtsafxjilj
     }
     }
-    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var importantValue: ImportantValue
     @EnvironmentObject var xtrgdy: Pputo
     @StateObject private var bblb = Kuehwxft.shared
     
@@ -67,7 +67,7 @@ var jbezalrz:  Set<Double> {
                     
                     ScrollView(showsIndicators: false) {
                         LazyVStack(spacing: 16) {
-                            if !appState.disabledServices {
+                            if !importantValue.opacityForStart {
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     Zjtrk()
                                 }

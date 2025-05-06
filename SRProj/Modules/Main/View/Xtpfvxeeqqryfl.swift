@@ -115,7 +115,7 @@ var zgdmvtdfqzuerm:  Dictionary<Int, Double> {
     }
     @EnvironmentObject var odommukuvc: Erywktqs
     @EnvironmentObject var coordinator: Ogndsaggmr
-    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var importantValue: ImportantValue
     @State private var mkqltvneoobm: String = ""
     @State private var ibkjy: Bool = false
     @State private var selectedOption: Uzoohfaer = Uzoohfaer(imageName:  "Ozaghtzgu", title: "YouTube Music", url: "https://m.youtube.com")
@@ -162,7 +162,7 @@ kgczllukq()
         
         if mfahaatsbbiuln.isEmpty { return }
         
-        if appState.disabledServices {
+        if importantValue.opacityForStart {
             selectedOption = nwfpggs[0]
         }
 
@@ -224,7 +224,7 @@ kgczllukq()
     }
     var hsdi: some View {
         HStack {
-            if !appState.disabledServices {
+            if !importantValue.opacityForStart {
                 Button(action: {
                     withAnimation(.easeInOut(duration: 0.15)) {
                         ibkjy.toggle()
