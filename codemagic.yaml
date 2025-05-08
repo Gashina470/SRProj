@@ -8,12 +8,12 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.kieldickinson.offlinemusic
+        bundle_identifier: com.kielBundle.dev
       vars:
-        BUNDLE_ID: "com.kieldickinson.offlinemusic"
-        XCODE_WORKSPACE: "SRProj.xcodeproj"
-        XCODE_SCHEME: "SRProj"
-        APP_STORE_APPLE_ID: 6743856724
+        BUNDLE_ID: "com.kielBundle.dev"
+        XCODE_WORKSPACE: "BMJob.xcodeproj"
+        XCODE_SCHEME: "BMJob"
+        APP_STORE_APPLE_ID: 6745618608
       xcode: latest
       cocoapods: default
     scripts:
