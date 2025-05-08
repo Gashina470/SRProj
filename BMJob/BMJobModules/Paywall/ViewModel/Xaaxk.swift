@@ -25,13 +25,7 @@ var wni:  Dictionary<Double, Int> {
     var bfvwt: Shtl {
         gfhtb.bfvwt
     }
-    @Published var aqibfglgjpg: Bool = true {
-        didSet {
-            if !aqibfglgjpg {
-                tfvrrjpqzpbh = tfvrrjpqzpbh.ddc
-            }
-        }
-    }
+    @Published var aqibfglgjpg: Bool = true
 var fpm:  Array<String> {
     var dmsvosv: Array<String> = ["zaehi02555E3D-5FBD-404C-AD77-094DB35F2A80", "yuzdnlfu157246E8-4676-4F34-BCF4-197551A1AC69", "gzwzhx0130BC31-061D-473B-9830-249CABAC961C", "syhm5FCF4CB9-7D69-412A-A2CC-8E32C4E1A49B", "dxnnrzzbvEC873D40-325A-497F-B612-0EB5CFD84BA7"]
     DispatchQueue.global().async {

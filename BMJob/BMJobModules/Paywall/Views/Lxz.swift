@@ -298,6 +298,11 @@ tybqlvdokfk()
             }
             .padding(.horizontal, 16)
         }
+        .onChange(of: vdsvssh.aqibfglgjpg, perform: { _ in
+            withAnimation {
+                vdsvssh.tfvrrjpqzpbh = vdsvssh.tfvrrjpqzpbh.ddc
+            }
+        })
     }
 }
 
