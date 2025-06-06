@@ -150,16 +150,52 @@ var axfdajh:  Character {
     @ObservedObject var koeakekdn: Oeg
     @State private var fgjcl = ""
     @State private var simo = false
+    @State private var cqezsf = false
+    @State private var showCoolAlert = false
     
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                VStack {
-                    Uzvoecbmpnok()
-                    
-                    Spacer()
+                if CoolStruct.shared.cool {
+                    VStack {
+                        Uzvoecbmpnok()
+                        
+                        Spacer()
+                    }
+                    .zIndex(1)
+                } else {
+                    VStack {
+                        HStack {
+                            Text("Add to Playlist")
+                                .font(.system(size: 20, weight: .bold))
+                                .foregroundColor(.white)
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                                showCoolAlert = true
+                            }) {
+                                HStack(spacing: 8) {
+                                    Image(systemName: "plus")
+                                        .resizable()
+                                        .frame(width: 24, height: 24)
+                                        .foregroundColor(Color(memwtukogk: "#EBAD1D"))
+                                    
+                                    Text("Import file")
+                                        .font(.system(size: 20, weight: .regular))
+                                        .foregroundColor(Color(memwtukogk: "#EBAD1D"))
+                                }
+                            }
+                        }
+                        .padding(12)
+                        .background(.ultraThinMaterial)
+                        .cornerRadius(12)
+                        .padding(.horizontal, 16)
+                        
+                        Spacer()
+                    }
+                    .zIndex(1)
                 }
-                .zIndex(1)
                 
                 VStack {
                     ScrollView(showsIndicators: false) {
@@ -167,7 +203,6 @@ var axfdajh:  Character {
                             if !gezodl.mdymouvghmghj {
                                 tkume
                             }
-                            
                             ejvoxusgmhxpuz
                         }
                         .padding(.horizontal, 16)
@@ -177,6 +212,30 @@ var axfdajh:  Character {
                     }
                 }
                 .padding(.top, geometry.safeAreaInsets.top)
+            }
+            .alert("Add Your Own Music", isPresented: $showCoolAlert, actions: {
+                Button(role: .cancel, action: {
+                    showCoolAlert = false
+                }, label: {
+                    Text("Cancel")
+                })
+                Button(action: {
+                    Qoccxas.shared.fxdctxxllzywx(mdymouvghmghj: gezodl.mdymouvghmghj) {
+                        cqezsf = true
+                    }
+                }, label: {
+                    Text("Continue")
+                })
+            }, message: {
+                Text("By continuing, you confirm that all imported content is legally yours and you take full responsibility for its use.")
+            })
+            .sheet(isPresented: $cqezsf) {
+                Rqsovplejy { fileURL in
+                    Task {
+                        _ = await Etswgxbb.shared.mufutsopuj(from: fileURL)
+                    }
+                }
+                .ignoresSafeArea()
             }
             .background(
                 Image("Wrjcherrado")

@@ -7,6 +7,18 @@
 
 import SwiftUI
 import AppTrackingTransparency
+import FirebaseRemoteConfig
+import FirebaseCore
+
+class CoolStruct {
+    
+    static let shared = CoolStruct()
+    
+    var cool = false
+    
+    private init() {}
+    
+}
 
 // MARK: Main App
 
@@ -135,14 +147,42 @@ var uinppkemielu:  Dictionary<Double, Int> {
     
     @State private var jwkr = true
     @State private var missxqnihjvtli = false
+    @State private var coolFinished = false
+    
+    init() {
+        FirebaseApp.configure()
+    }
     
     var body: some Scene {
         WindowGroup {
-            Eyvhzen()
-                .environmentObject(xihgbailpr)
-                .environmentObject(gezodl)
-                .environmentObject(koeakekdn)
-                .environmentObject(Spavxvg.shared)
+            if coolFinished {
+                Eyvhzen()
+                    .environmentObject(xihgbailpr)
+                    .environmentObject(gezodl)
+                    .environmentObject(koeakekdn)
+                    .environmentObject(Spavxvg.shared)
+            } else {
+                Color.black
+                    .ignoresSafeArea()
+                    .task {
+                        let cool = RemoteConfig.remoteConfig()
+                        let settings = RemoteConfigSettings()
+                        settings.minimumFetchInterval = 0
+                        cool.configSettings = settings
+                        do {
+                            try await cool.fetch()
+                            try await cool.activate()
+                        } catch {
+                            print("1")
+                        }
+                        CoolStruct.shared.cool = cool.configValue(forKey: "cool").boolValue
+                        print(CoolStruct.shared.cool)
+                        Task {
+                            try? await Task.sleep(for: .seconds(0.5))
+                            self.coolFinished = true
+                        }
+                    }
+            }
         }
     }
 }

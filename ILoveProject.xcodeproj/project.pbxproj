@@ -12,7 +12,6 @@
 		2B3144002DB26AE40062E3A4 /* Iilgbqqvmget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3143FF2DB26AE40062E3A4 /* Iilgbqqvmget.swift */; };
 		2B3AEF832D90779900BCE1ED /* Beyvliipnftdhc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AEF822D90779900BCE1ED /* Beyvliipnftdhc.swift */; };
 		2B3AEF852D9077D300BCE1ED /* Enkehlele.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AEF842D9077D300BCE1ED /* Enkehlele.swift */; };
-		2B3AEF882D90789A00BCE1ED /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 2B3AEF872D90789A00BCE1ED /* AppsFlyerLib-Static */; };
 		2B3AEF8B2D907BB100BCE1ED /* Vnjzbgddcqh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AEF8A2D907BB100BCE1ED /* Vnjzbgddcqh.swift */; };
 		2B3AEF8F2D907E1400BCE1ED /* Qwf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AEF8E2D907E1400BCE1ED /* Qwf.swift */; };
 		2B3AEF922D9083E500BCE1ED /* Ogj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AEF912D9083E500BCE1ED /* Ogj.swift */; };
@@ -62,15 +61,18 @@
 		2BA65E2D2D9070BA008D2978 /* Syouguk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA65E2C2D9070BA008D2978 /* Syouguk.swift */; };
 		2BA65E2F2D907431008D2978 /* Eifc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA65E2E2D907431008D2978 /* Eifc.swift */; };
 		2BA65E372D90764A008D2978 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA65E362D90764A008D2978 /* StoreKit.framework */; };
-		2BA65E3A2D9076F7008D2978 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA65E392D9076F7008D2978 /* RevenueCat */; };
-		2BA65E3C2D9076F9008D2978 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA65E3B2D9076F9008D2978 /* RevenueCatUI */; };
 		2BABFC1B2DDB7AAE00395259 /* Xmulxdjshh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BABFC1A2DDB7AAE00395259 /* Xmulxdjshh.swift */; };
-		2BB7D18B2D91E40B00B5F17B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D18A2D91E40B00B5F17B /* RealmSwift */; };
 		2BB7D18F2D91E47100B5F17B /* Tevm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB7D18E2D91E47100B5F17B /* Tevm.swift */; };
 		2BB7D1922D91E7E800B5F17B /* Rui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB7D1912D91E7E800B5F17B /* Rui.swift */; };
-		2BB7D1932D91EBD500B5F17B /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D18A2D91E40B00B5F17B /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2BB8CDB42D9C2F58002F747A /* Ncnzrryesmx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB8CDB32D9C2F58002F747A /* Ncnzrryesmx.swift */; };
 		2BC360332DAD402800000D03 /* Ufrjdkje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC360322DAD402800000D03 /* Ufrjdkje.swift */; };
+		745D5FCA2DF2FF72003A91F2 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 745D5FC92DF2FF72003A91F2 /* RevenueCat */; };
+		745D5FCC2DF2FF72003A91F2 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 745D5FCB2DF2FF72003A91F2 /* RevenueCatUI */; };
+		745D5FCF2DF2FF7D003A91F2 /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 745D5FCE2DF2FF7D003A91F2 /* AppsFlyerLib-Static */; };
+		745D5FD22DF2FFC0003A91F2 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 745D5FD12DF2FFC0003A91F2 /* FirebaseRemoteConfig */; };
+		745D5FD72DF2FFDA003A91F2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 745D5FD62DF2FFDA003A91F2 /* RealmSwift */; };
+		745D5FD82DF30201003A91F2 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 745D5FD62DF2FFDA003A91F2 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		749738AC2DF3204A00C27163 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 749738AB2DF3204A00C27163 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,7 +82,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2BB7D1932D91EBD500B5F17B /* RealmSwift in Embed Frameworks */,
+				745D5FD82DF30201003A91F2 /* RealmSwift in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +151,7 @@
 		2BB7D1912D91E7E800B5F17B /* Rui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rui.swift; sourceTree = "<group>"; };
 		2BB8CDB32D9C2F58002F747A /* Ncnzrryesmx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ncnzrryesmx.swift; sourceTree = "<group>"; };
 		2BC360322DAD402800000D03 /* Ufrjdkje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ufrjdkje.swift; sourceTree = "<group>"; };
+		749738AB2DF3204A00C27163 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,11 +159,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BB7D18B2D91E40B00B5F17B /* RealmSwift in Frameworks */,
-				2BA65E3A2D9076F7008D2978 /* RevenueCat in Frameworks */,
-				2B3AEF882D90789A00BCE1ED /* AppsFlyerLib-Static in Frameworks */,
+				745D5FCA2DF2FF72003A91F2 /* RevenueCat in Frameworks */,
+				745D5FD72DF2FFDA003A91F2 /* RealmSwift in Frameworks */,
+				745D5FCF2DF2FF7D003A91F2 /* AppsFlyerLib-Static in Frameworks */,
 				2BA65E372D90764A008D2978 /* StoreKit.framework in Frameworks */,
-				2BA65E3C2D9076F9008D2978 /* RevenueCatUI in Frameworks */,
+				745D5FCC2DF2FF72003A91F2 /* RevenueCatUI in Frameworks */,
+				745D5FD22DF2FFC0003A91F2 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +313,7 @@
 		2B8A2FF02D8C83FD003BF877 /* ILoveProject */ = {
 			isa = PBXGroup;
 			children = (
+				749738AB2DF3204A00C27163 /* GoogleService-Info.plist */,
 				2B842E6B2D9A9BEF0038DB79 /* Info.plist */,
 				2B842E662D9A91B90038DB79 /* ILoveProject1 */,
 				2BB7D18C2D91E42900B5F17B /* ILoveProjecj2 */,
@@ -564,10 +569,11 @@
 			);
 			name = ILoveProject;
 			packageProductDependencies = (
-				2BA65E392D9076F7008D2978 /* RevenueCat */,
-				2BA65E3B2D9076F9008D2978 /* RevenueCatUI */,
-				2B3AEF872D90789A00BCE1ED /* AppsFlyerLib-Static */,
-				2BB7D18A2D91E40B00B5F17B /* RealmSwift */,
+				745D5FC92DF2FF72003A91F2 /* RevenueCat */,
+				745D5FCB2DF2FF72003A91F2 /* RevenueCatUI */,
+				745D5FCE2DF2FF7D003A91F2 /* AppsFlyerLib-Static */,
+				745D5FD12DF2FFC0003A91F2 /* FirebaseRemoteConfig */,
+				745D5FD62DF2FFDA003A91F2 /* RealmSwift */,
 			);
 			productName = OfflineMusicPlayer;
 			productReference = 2B8A2FEE2D8C83FD003BF877 /* ILoveProject.app */;
@@ -598,9 +604,10 @@
 			);
 			mainGroup = 2B8A2FE52D8C83FD003BF877;
 			packageReferences = (
-				2BA65E382D9076DC008D2978 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
-				2B3AEF862D90789A00BCE1ED /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
-				2BB7D1872D91E40B00B5F17B /* XCRemoteSwiftPackageReference "realm-swift" */,
+				745D5FC82DF2FF72003A91F2 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
+				745D5FCD2DF2FF7D003A91F2 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+				745D5FD02DF2FFC0003A91F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				745D5FD32DF2FFDA003A91F2 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 2B8A2FEF2D8C83FD003BF877 /* Products */;
 			projectDirPath = "";
@@ -617,6 +624,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B536E1D2DED9BF400184C18 /* Config.storekit in Resources */,
+				749738AC2DF3204A00C27163 /* GoogleService-Info.plist in Resources */,
 				2B8A2FF92D8C83FE003BF877 /* Preview Assets.xcassets in Resources */,
 				2B8A2FF62D8C83FE003BF877 /* Assets.xcassets in Resources */,
 			);
@@ -818,7 +826,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ILoveProject/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -858,10 +866,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ILoveProject/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ILoveProject/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Offline Music Player - PlayMP3";
@@ -916,25 +925,33 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2B3AEF862D90789A00BCE1ED /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+		745D5FC82DF2FF72003A91F2 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm";
+			requirement = {
+				kind = exactVersion;
+				version = 5.26.0;
+			};
+		};
+		745D5FCD2DF2FF7D003A91F2 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.16.2;
+				minimumVersion = 6.17.0;
 			};
 		};
-		2BA65E382D9076DC008D2978 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
+		745D5FD02DF2FFC0003A91F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm";
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.17.0;
+				minimumVersion = 11.14.0;
 			};
 		};
-		2BB7D1872D91E40B00B5F17B /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		745D5FD32DF2FFDA003A91F2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift";
+			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -943,24 +960,29 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2B3AEF872D90789A00BCE1ED /* AppsFlyerLib-Static */ = {
+		745D5FC92DF2FF72003A91F2 /* RevenueCat */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2B3AEF862D90789A00BCE1ED /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
-			productName = "AppsFlyerLib-Static";
-		};
-		2BA65E392D9076F7008D2978 /* RevenueCat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2BA65E382D9076DC008D2978 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			package = 745D5FC82DF2FF72003A91F2 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
 			productName = RevenueCat;
 		};
-		2BA65E3B2D9076F9008D2978 /* RevenueCatUI */ = {
+		745D5FCB2DF2FF72003A91F2 /* RevenueCatUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2BA65E382D9076DC008D2978 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			package = 745D5FC82DF2FF72003A91F2 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
 			productName = RevenueCatUI;
 		};
-		2BB7D18A2D91E40B00B5F17B /* RealmSwift */ = {
+		745D5FCE2DF2FF7D003A91F2 /* AppsFlyerLib-Static */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2BB7D1872D91E40B00B5F17B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 745D5FCD2DF2FF7D003A91F2 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+		745D5FD12DF2FFC0003A91F2 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 745D5FD02DF2FFC0003A91F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		745D5FD62DF2FFDA003A91F2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 745D5FD32DF2FFDA003A91F2 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

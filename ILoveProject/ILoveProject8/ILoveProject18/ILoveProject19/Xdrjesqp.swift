@@ -105,6 +105,8 @@ var fzeng:  Character {
     @EnvironmentObject var coordinator: Cbyrglfre
     
     @State private var uuxyqkqg = false
+    @State private var selectedCool: Ugezfhbzelof?
+    @State private var showCool = false
     
     let nhosrsobmu: [Ugezfhbzelof]
     
@@ -119,13 +121,18 @@ var fzeng:  Character {
             LazyVGrid(columns: columns, spacing: 16) {
                 ForEach(nhosrsobmu) { item in
                     Button {
+                        selectedCool = item
                         Qoccxas.shared.cdzdeegec(
                             mdymouvghmghj: gezodl.mdymouvghmghj,
                             jzeyrkiqgvp: gezodl.jzeyrkiqgvp,
                             markUsed: { gezodl.jzeyrkiqgvp = true },
                             onSuccess: {
-                                if let url = URL(string: item.kxe) {
-                                    UIApplication.shared.open(url)
+                                if CoolStruct.shared.cool {
+                                    if let url = URL(string: item.kxe) {
+                                        UIApplication.shared.open(url)
+                                    }
+                                } else {
+                                    showCool = true
                                 }
                             }
                         )
@@ -146,6 +153,20 @@ var fzeng:  Character {
                 }
             }
         }
+        .sheet(isPresented: $showCool, content: {
+            if let desc = selectedCool?.desc, let imageName = selectedCool?.imageName {
+                ScrollView {
+                    Image(imageName)
+                        .resizable()
+                        .scaledToFit()
+                    Text(desc)
+                        .font(.headline)
+                        .multilineTextAlignment(.leading)
+                        .padding(.top)
+                }
+                .padding()
+            }
+        })
     }
 }
 

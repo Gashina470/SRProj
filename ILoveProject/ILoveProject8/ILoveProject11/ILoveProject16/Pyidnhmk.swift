@@ -17,7 +17,7 @@ var xnnqnvjvu:  Set<String> {
 
     return lpqsgk
     }
-
+    @State private var showCoolAlert = false
     init(
         viewModel: PlaylistViewModel,
         coordinator: Rudllxncjcnaqh,
@@ -67,9 +67,7 @@ brf()
                     Spacer()
                     
                     Button(action: {
-                        Qoccxas.shared.fxdctxxllzywx(mdymouvghmghj: gezodl.mdymouvghmghj) {
-                            cqezsf = true
-                        }
+                        showCoolAlert = true
                     }) {
                         HStack(spacing: 8) {
                             Image(systemName: "plus")
@@ -87,6 +85,22 @@ brf()
 
             hbyy()
         }
+        .alert("Add Your Own Music", isPresented: $showCoolAlert, actions: {
+            Button(role: .cancel, action: {
+                showCoolAlert = false
+            }, label: {
+                Text("Cancel")
+            })
+            Button(action: {
+                Qoccxas.shared.fxdctxxllzywx(mdymouvghmghj: gezodl.mdymouvghmghj) {
+                    cqezsf = true
+                }
+            }, label: {
+                Text("Continue")
+            })
+        }, message: {
+            Text("By continuing, you confirm that all imported content is legally yours and you take full responsibility for its use.")
+        })
         .padding(.horizontal, 16)
         .padding(.top)
         .background {
